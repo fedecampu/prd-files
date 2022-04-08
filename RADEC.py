@@ -10,14 +10,8 @@ import math
 from statistics import mean
 import matplotlib.pyplot as plt
 
-f = open('/home/federico/work/DS3/observacion/Marcelo/j349/TTCCP/programas/files_Marcelo/cat_201214_1.txt','r')
-#g = open('schvenus4_icrs_201028.txt','r')
-g = open('/home/federico/work/DS3/observacion/Marcelo/j349/TTCCP/programas/files_Marcelo/schsol0_icrs_201214.txt','r')
-#h = open('./datos/ttcp1/j181ttcp1c05.txt','r')
-h = open('/home/federico/work/DS3/observacion/Marcelo/j349/TTCCP/programas/files_Marcelo/fase02ttcp2c03.txt','r')
-
-#f = open('/home/federico/work/DS3/observacion/Marcelo/j349/TTCCP/outputs/Venus/cat_201214_1v.txt', 'r')
-#g = open('/home/federico/work/DS3/observacion/Marcelo/j349/TTCCP/outputs/Venus/sch_201214_1v.txt', 'r')
+f = open('/home/federico/work/DS3/observacion/Marcelo/j349/TTCCP/outputs/Venus/cat_201214_1v.txt', 'r')
+g = open('/home/federico/work/DS3/observacion/Marcelo/j349/TTCCP/outputs/Venus/sch_201214_1v.txt', 'r')
 h1 = open('/home/federico/work/DS3/observacion/Marcelo/j349/TTCCP/outputs/Venus/Poten_total_C1-x_gain.txt', 'r')
 h2 = open('/home/federico/work/DS3/observacion/Marcelo/j349/TTCCP/outputs/Venus/Poten_total_C2-x_gain.txt', 'r')
 h3 = open('/home/federico/work/DS3/observacion/Marcelo/j349/TTCCP/outputs/Venus/Poten_total_C3-x_gain.txt', 'r')
@@ -33,7 +27,7 @@ y = []
 z = []
 cat1 = f.readlines()
 sch1 = g.readlines()
-dat1 = h.readlines()
+dat1 = h1.readlines()
 
 data = {}
 for d in dat1:
