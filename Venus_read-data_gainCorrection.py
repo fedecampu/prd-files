@@ -75,16 +75,20 @@ with open(INFILEka, 'rb') as fd:
         SUM_AUX1=0
         SUM_AUX2=0
         for j in range(0,1000000):
-            I1=b.read('uintle:8')
+            aux=b.read('bits:8')
+            I1= aux.int
             X0=I1
             I1=2*I1+1
-            Q1=b.read('uintle:8')
+            aux=b.read('bits:8')
+            Q1= aux.int
             X1=Q1
             Q1=2*Q1+1
-            I2=b.read('uintle:8')
+            aux=b.read('bits:8')
+            I2=aux.int
             X2=I2
             I2=2*I2+1
-            Q2=b.read('uintle:8')
+            aux=b.read('bits:8')
+            Q2=aux.int
             X3=Q2
             Q2=2*Q2+1
             #Marcelo
